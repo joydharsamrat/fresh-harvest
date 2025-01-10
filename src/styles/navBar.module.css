@@ -1,0 +1,11 @@
+.activeOption::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  height: 3px;
+  width: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background: #ef233c;
+}

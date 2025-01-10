@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "@/components/shared/navBar/NavBar";
+import { rubik } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Fresh Harvests - Fresh Fruits & Vegetables Online",
@@ -13,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={` `}>{children}</body>
+    <html lang="en" className={`${rubik.className}`}>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
