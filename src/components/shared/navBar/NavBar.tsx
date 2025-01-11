@@ -25,21 +25,18 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-transparent px-2 sm:px-10 sm:py-9 ">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+    <Disclosure
+      as="nav"
+      className="fixed top-0 z-50 w-full bg-transparent sm:py-4"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex gap-1 shrink-0 items-center">
-            <Image
-              alt="Fresh Harvests"
-              width={32}
-              height={32}
-              src={logo}
-              className="h-8 w-auto"
-            />
+            <Image alt="Fresh Harvests" width={32} height={32} src={logo} />
             <span className="font-bold text-xl">Fresh Harvests</span>
           </div>
           <div className="hidden  sm:block">
-            <div className="flex space-x-4">
+            <div className="flex space-x-16">
               {navigation.map((item) => (
                 <a
                   key={item.name}
@@ -56,7 +53,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center gap-5">
             <div className="  hidden sm:flex items-center static inset-auto ml-6">
               <FavoriteButton />
             </div>
