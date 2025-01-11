@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/shared/navBar/NavBar";
 import { rubik } from "./fonts";
+import { ModalProvider } from "@/context/modalStateProvider";
+import ModalsContainer from "@/components/shared/ModalsContainer";
+import { Toaster } from "react-hot-toast";
+import UserProvider from "@/context/userProvider";
+import { ProductStateProvider } from "@/context/productStateContext";
 
 export const metadata: Metadata = {
   title: "Fresh Harvests - Fresh Fruits & Vegetables Online",
@@ -17,10 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${rubik.className}`}>
       <body>
-        <NavBar />
-        {children}
+        <UserProvider>
+          <ModalProvider>
+            <Toaster />
+            <NavBar />
+            <ProductStateProvider>{children}</ProductStateProvider>
+            <ModalsContainer />
+          </ModalProvider>
+        </UserProvider>
       </body>
     </html>
   );
 }
-// antialiased
