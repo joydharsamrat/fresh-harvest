@@ -22,3 +22,26 @@ export const getAllCategories = async () => {
     throw new Error(error);
   }
 };
+
+export const getProductById = async (id: string) => {
+  try {
+    const res = await fetch(`${envConfig.base_url}/products/${id}`, {
+      cache: "no-store",
+    });
+    const data = await res.json();
+    return data;
+  } catch (error: any) {
+    throw new Error(error);
+  }
+};
+export const getCategoryById = async (id: string) => {
+  try {
+    const res = await fetch(`${envConfig.base_url}/category/${id}`, {
+      cache: "no-store",
+    });
+    const data = await res.json();
+    return data;
+  } catch (error: any) {
+    throw new Error(error);
+  }
+};

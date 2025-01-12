@@ -11,6 +11,7 @@ import MenuButton from "./MenuButton";
 import SignInButton from "./SigninButton";
 import CartButton from "./CartButton";
 import FavoriteButton from "./FavoriteButton";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -31,10 +32,10 @@ export default function NavBar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="flex gap-1 shrink-0 items-center">
+          <Link href="/" className="flex gap-1 shrink-0 items-center">
             <Image alt="Fresh Harvests" width={32} height={32} src={logo} />
             <span className="font-bold text-xl">Fresh Harvests</span>
-          </div>
+          </Link>
           <div className="hidden  sm:block">
             <div className="flex space-x-16">
               {navigation.map((item) => (

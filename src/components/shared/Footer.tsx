@@ -31,11 +31,15 @@ const Footer = () => {
           </div>
 
           {/* Quick Links and Contact Section */}
-          <div className="col-span-3 flex justify-between gap-5">
+          <div className="col-span-3 flex justify-between  sm:gap-5">
             {/* Quick Links 1 */}
             <div>
-              <h3 className="text-lg font-medium mb-2">Quick Links 1</h3>
-              <ul className="space-y-1 text-sm">
+              <h3 className="text-xs sm:text-lg font-medium mb-2">
+                Quick Links 1
+              </h3>
+              <ul
+                className={`space-y-1 text-xs sm:text-sm ${questrial.className}`}
+              >
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -56,8 +60,12 @@ const Footer = () => {
 
             {/* Quick Links 2 */}
             <div>
-              <h3 className="text-lg font-medium mb-2">Quick Links 2</h3>
-              <ul className="space-y-1 text-sm">
+              <h3 className="text-xs sm:text-lg font-medium mb-2">
+                Quick Links 2
+              </h3>
+              <ul
+                className={`space-y-1 text-xs sm:text-sm ${questrial.className}`}
+              >
                 <li>
                   <Link href="/favorites">Favorites</Link>
                 </li>
@@ -75,7 +83,9 @@ const Footer = () => {
 
             {/* Contact Section */}
             <div>
-              <h3 className="text-lg font-medium mb-2">Contact Us</h3>
+              <h3 className="text-xs sm:text-lg font-medium mb-2">
+                Contact Us
+              </h3>
               <div className={`space-y-2 ${questrial.className} text-sm`}>
                 <p className="flex items-center gap-2">
                   <span className="text-secondary">
