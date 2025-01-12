@@ -7,6 +7,7 @@ import ModalsContainer from "@/components/shared/ModalsContainer";
 import { Toaster } from "react-hot-toast";
 import UserProvider from "@/context/userProvider";
 import { ProductStateProvider } from "@/context/productStateContext";
+import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "Fresh Harvests - Fresh Fruits & Vegetables Online",
@@ -27,6 +28,7 @@ export default function RootLayout({
             <Toaster />
             <NavBar />
             <ProductStateProvider>{children}</ProductStateProvider>
+            <Footer />
             <ModalsContainer />
           </ModalProvider>
         </UserProvider>
