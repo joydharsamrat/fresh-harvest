@@ -23,7 +23,7 @@ const ProductImageSlider = ({
         >
           {images?.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-[80%] aspect-square mx-auto ">
+              <div className="relative w-full md:w-[450px] aspect-square mx-auto">
                 <Image
                   fill
                   src={img}
