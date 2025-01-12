@@ -5,6 +5,9 @@ import Container from "@/components/shared/Container";
 import styles from "@/styles/home/offer.module.css";
 import fruits from "@/assets/images/offer.png";
 import veggies from "@/assets/images/light-vegetables.png";
+import smallLeaf from "@/assets/images/SmallLeaf.png";
+import rightLeaf from "@/assets/images/heroRightLeaf.png";
+import blurImg from "@/assets/images/blurIcon.png";
 
 const Offer = () => {
   return (
@@ -52,8 +55,21 @@ const Offer = () => {
               height={200}
             />
           </div>
+          <Image
+            src={smallLeaf}
+            alt="leaf icon"
+            width={50}
+            height={50}
+            className="absolute top-2 right-2 sm:right-1/3 -rotate-90"
+          />
         </div>
       </Container>
+      <div className="absolute bottom-5 right-0 h-12 w-12 sm:h-20 sm:w-20">
+        <Image src={rightLeaf} alt="leaf icon" fill />
+      </div>
+      <div className="absolute bottom-0 left-0 h-20 w-20 sm:h-40 sm:w-40">
+        <Image src={blurImg} alt="leaf icon" fill />
+      </div>
     </section>
   );
 };

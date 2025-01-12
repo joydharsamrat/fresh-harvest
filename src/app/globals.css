@@ -7,3 +7,12 @@
   padding: 0;
   margin: 0;
 }
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+  --swiper-pagination-bullet-inactive-color: gray;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #749b3f;
+}
