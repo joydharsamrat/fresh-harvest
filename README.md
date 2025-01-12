@@ -4,7 +4,7 @@
 
 This package includes the client component of A E-commerce web application.
 
-**[LIVE LINK]()**
+**[LIVE LINK](https://fresh-harvests-five.vercel.app/)**
 
 ## Technologies Used
 

@@ -19,7 +19,7 @@ const RelatedProducts = async () => {
           fruits, vegetables, and salad ingredients.
         </p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-7 justify-between border">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-7 justify-between">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
