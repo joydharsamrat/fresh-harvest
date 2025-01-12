@@ -23,14 +23,14 @@ export default function SignInButton() {
       {!user ? (
         <button
           onClick={openSignIn}
-          className={`hidden sm:block text-sm font-semibold ${buttonColor} px-6 py-3 border  rounded bg-transparent`}
+          className={`w-full sm:w-auto text-sm font-semibold ${buttonColor} px-6 py-3 border  rounded bg-transparent`}
         >
           Sign In
         </button>
       ) : (
         <button
           onClick={handleLogout}
-          className={`hidden sm:block text-sm font-semibold bg-primary px-6 py-3 rounded text-white`}
+          className={`w-full sm:w-auto text-sm font-semibold bg-primary px-6 py-3 rounded text-white`}
         >
           Sign Out
         </button>

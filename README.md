@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fresh Harvest
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This package includes the client component of A E-commerce web application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**[LIVE LINK]()**
+
+## Technologies Used
+
+- Frontend: Next.js, Typescript, Tailwind css
+- Authentication: JWT (JSON Web Tokens)
+
+## Cloning the Repositories
+
+clone the repository:
+
+```sh
+git clone https://github.com/joydharsamrat/fresh-harvest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installing Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to the directory and install the required dependencies using npm.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+cd fresh-harvest
+npm install
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a .env file in the root directory with the following contents:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+NEXT_PUBLIC_BASE_API=YOUR_SERVER_BASE_API
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Running the Application Locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run the development server:
+
+```sh
+ npm run dev
+```
+
+## preparing the Application for deployment
+
+Build the project for deployment:
+
+```sh
+ npm run build
+```
+
+Deploy on vercel:
+
+```sh
+ vercel --prod
+```

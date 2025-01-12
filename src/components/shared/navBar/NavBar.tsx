@@ -28,7 +28,7 @@ export default function NavBar() {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 z-50 w-full bg-transparent sm:py-4"
+      className="fixed top-0 z-[100] w-full bg-transparent sm:py-4"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12">
         <div className="relative flex h-16 items-center justify-between">
@@ -61,7 +61,9 @@ export default function NavBar() {
             <div className="flex items-center pr-2 ">
               <CartButton />
             </div>
-            <SignInButton />
+            <div className="hidden sm:block">
+              <SignInButton />
+            </div>
 
             <div className=" flex items-center sm:hidden">
               {/* Mobile menu button*/}
@@ -71,8 +73,8 @@ export default function NavBar() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
+      <DisclosurePanel className="sm:hidden ">
+        <div className="space-y-1 px-2 pb-3 pt-2 bg-white">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
@@ -80,15 +82,16 @@ export default function NavBar() {
               href={item.href}
               aria-current={item.current ? "page" : undefined}
               className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                item.current ? "bg-secondary text-white" : "text-secondary",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
               {item.name}
             </DisclosureButton>
           ))}
+          <DisclosureButton as="div">
+            <SignInButton />
+          </DisclosureButton>
         </div>
       </DisclosurePanel>
     </Disclosure>
