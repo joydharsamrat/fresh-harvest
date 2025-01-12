@@ -36,7 +36,7 @@ const Description = () => {
         </div>
         <div className=" mt-8  bg-theme-extend-colors-gray-light1 border rounded-lg flex items-center  w-fit">
           <div className="p-2 sm:p-6 flex flex-col gap-1 sm:gap-2">
-            <p className="text-[8px] sm:text-sm font-medium text-secondary">
+            <p className="text-[8px] sm:text-sm font-medium text-green">
               Special Offer
             </p>
             <h2 className="sm:text-3xl font-medium text-black">Fresh Salad</h2>
@@ -49,7 +49,7 @@ const Description = () => {
               </span>
               <span className="text-[9px] sm:text-base font-medium">off</span>
             </p>
-            <p className="text-[8px] sm:text-sm bg-secondary py-1 px-2 w-fit text-white rounded-xl">
+            <p className="text-[8px] sm:text-sm bg-green py-1 px-2 w-fit text-white rounded-xl">
               CODE: <span className="font-bold text-yellow-400">FRESH25</span>
             </p>
           </div>

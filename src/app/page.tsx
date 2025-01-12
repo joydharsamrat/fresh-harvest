@@ -1,5 +1,6 @@
 import About from "@/components/home/AboutUs/About";
 import Hero from "@/components/home/hero/Hero";
+import Offer from "@/components/home/Offer/Offer";
 import Products from "@/components/home/OurProducts/Products";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Products />
       <About />
+      <Offer />
     </>
   );
 }

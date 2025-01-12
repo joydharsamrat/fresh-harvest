@@ -9,7 +9,7 @@ import smallLeaf from "@/assets/images/SmallLeaf.png";
 
 const About = () => {
   return (
-    <section className="mb-32">
+    <section>
       <Container>
         <div className="flex flex-col md:flex-row items-center gap-5 bg-white">
           <div className="flex-1 h-auto w-full ">

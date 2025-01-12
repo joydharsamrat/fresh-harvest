@@ -12,6 +12,7 @@ export default {
         primary: "#FF6A1A",
         secondary: "#749B3F",
         black: "#212337",
+        green: "#176D38",
         theme: {
           extend: {
             colors: {
